@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+    <section id="bai-tap-JS-buoi5">
+        <div class="container">
+            <div class="main__header">
+                <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" href="#bai1" data-toggle="pill"
+                            data-target="#pills-bai1" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">Bài tập 1: Quản lý
+                            tuyển sinh</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" href="#bai2" data-toggle="pill"
+                            data-target="#pills-bai2" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Bài tập 2: Tính
+                            tiền điện</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="main__content">
+                <div class="tab-content container" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="bai1">
+                        <h3>Bài tập 1: Quản lý
+                            tuyển sinh</h3>
+                        <div class="diemchuan">
+                            <label for="diemchuan">Điểm chuẩn của hội đồng:</label>
+                            <input type="number" id="diemchuan">
+                        </div>
+                        <div class="diemthi3mon">
+                            <div class="diemMon1">
+                                <label for="diemMon1">Điểm thi môn 1:</label>
+                                <input id="diemMon1" type="number">
+                            </div>
+                            <div class="diemMon2">
+                                <label for="diemMon2">Điểm thi môn 2:</label>
+                                <input id="diemMon2" type="number">
+                            </div>
+                            <div class="diemMon3">
+                                <label for="diemMon3">Điểm thi môn 3:</label>
+                                <input id="diemMon3" type="number">
+                            </div>
+                        </div>
+                        <div class="diemuutien">
+                            <div class="khuvuc">
+                                <span>Chọn khu vực: </span>
+                                <select id="khuvuc">
+                                    <option value="">Chọn khu vực</option>
+                                    <option value="khuVucA">A</option>
+                                    <option value="khuVucB">B</option>
+                                    <option value="khuVucC">C</option>
+                                </select>
+                            </div>
+                            <div class="doituong">
+                                <span>Chọn đối tượng: </span>
+                                <select id="doituong">
+                                    <option value="">Chọn đối tượng</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="bt">
+                            <div class="result">
+                                <button onclick="tong()">Kết quả</button>
+                            </div>
+                            <div class="text">
+                                <span id="result1"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-bai2" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <h3>Bài tập 2: Tính tiền điện</h3>
+                        <div class="card-body">
+                            <input type="text" name="" id="name" placeholder="Nhập họ tên">
+                            <input type="number" name="" id="soKW" placeholder="Số KW">
+                        </div>
+                        <div class="bt">
+                            <button onclick="tinhTienDien()">Kết quả</button>
+                            <span id="result2"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
